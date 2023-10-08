@@ -34,6 +34,13 @@ return require('packer').startup(function(use)
     use('github/copilot.vim')
     use('will133/vim-dirdiff')
     use('itchyny/lightline.vim')
+    use('rhysd/git-messenger.vim')
+    use('f-person/git-blame.nvim')
+
+    use {
+        'glacambre/firenvim',
+        run = function() vim.fn['firenvim#install'](0) end 
+    }
 
     use {
         'VonHeikemen/lsp-zero.nvim',

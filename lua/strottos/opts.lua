@@ -35,3 +35,9 @@ vim.g.maplocalleader = '-'
 
 vim.o.list=true
 vim.o.lcs='tab:> ,trail:%'
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+    group = vim.api.nvim_create_augroup('Strottos', {}),
+    pattern = "*",
+    command = [[%s/\s\+$//e]],
+})
