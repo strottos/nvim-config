@@ -1,0 +1,7 @@
+local neotree = require('neo-tree')
+vim.keymap.set('n', '<C-n>', function()
+    vim.cmd("Neotree float")
+end, {})
+vim.keymap.set('n', '<localleader>gs', function()
+    vim.cmd("Neotree float git_status")
+end, {})
