@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
 
     use {
         'glacambre/firenvim',
-        run = function() vim.fn['firenvim#install'](0) end 
+        run = function() vim.fn['firenvim#install'](0) end
     }
 
     use {
@@ -56,4 +56,6 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+
+    use('rust-lang/rust.vim')
 end)

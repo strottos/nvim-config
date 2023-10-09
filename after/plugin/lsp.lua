@@ -3,9 +3,10 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
-  lsp.default_keymaps({buffer = bufnr})
+    local opts = {buffer = bufnr}
+    lsp.default_keymaps(opts)
+
+    vim.keymap.set('n', '<localleader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 end)
 
 require("mason").setup()
@@ -19,6 +20,7 @@ require("mason-lspconfig").setup {
 
         "gopls",
 
+        "pylsp",
         "pyright",
         "pyre",
 
