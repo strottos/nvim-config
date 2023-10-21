@@ -18,7 +18,9 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
 
     use('mbbill/undotree')
+
     use {'strottos/nvim-vadre', run = 'cargo build'}
+
     use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
 
     use {
