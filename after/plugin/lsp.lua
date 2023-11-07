@@ -35,8 +35,6 @@ require("mason-lspconfig").setup {
 
         "html",
         "cssls",
-
-        "remark_ls",
     },
     handlers = {
         lsp.default_setup,

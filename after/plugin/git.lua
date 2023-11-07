@@ -1,8 +1,8 @@
-vim.call('GitBlameDisable')
+vim.cmd('GitBlameDisable')
 vim.keymap.set('n', '<localleader>gm', function ()
-    if vim.g.gitblame_enabled == 0 then
-        vim.call('GitBlameEnable')
+    if vim.g.gitblame_enabled == false then
+        vim.cmd('GitBlameEnable')
     else
-        vim.call('GitBlameDisable')
+        vim.cmd('GitBlameDisable')
     end
 end, {})

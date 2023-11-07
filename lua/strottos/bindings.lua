@@ -36,9 +36,10 @@ vim.api.nvim_set_keymap('n', '<C-h>', ':exec "vertical resize " . (winwidth(\'%\
 
 -- Others
 vim.api.nvim_set_keymap('n', '<localleader>tr', ':%s/.\\[[0-9]\\+m\\?//g<CR>', {noremap = true})
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', {noremap = true})
 
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', {noremap = true})
 vim.api.nvim_set_keymap('i', '<C-v>', '<C-r><C-o>*', {noremap = true})
+
 vim.api.nvim_set_keymap('i', '<C-q>', '<C-v>', {noremap = true})
 vim.api.nvim_set_keymap('i', '<C-BS>', '<C-W>', {noremap = true})
 vim.api.nvim_set_keymap('i', '<S-BS>', '<BS>', {noremap = true})
