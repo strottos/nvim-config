@@ -3,6 +3,10 @@ vim.o.shortmess=vim.o.shortmess .. 'c'
 vim.o.cmdheight=2
 vim.o.updatetime=300
 
+require("neoconf").setup({
+    -- override any of the default settings here
+})
+
 -- Setup nvim-cmp.
 local cmp = require 'cmp'
 
@@ -155,7 +159,3 @@ vim.api.nvim_set_keymap('n', '[d', ":lua vim.diagnostic.goto_prev()<CR>", {norem
 vim.api.nvim_set_keymap('n', ']d', ":lua vim.diagnostic.goto_next()<CR>", {noremap = true})
 vim.api.nvim_set_keymap('n', '<localleader>q', ":lua vim.diagnostic.setloclist()<CR>", {noremap = true})
 vim.api.nvim_set_keymap('n', '<localleader>f', ":lua vim.lsp.buf.formatting()<CR>", {noremap = true})
-
-require("neoconf").setup({
-  -- override any of the default settings here
-})
