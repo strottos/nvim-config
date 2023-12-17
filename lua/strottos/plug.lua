@@ -31,6 +31,8 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'f-person/git-blame.nvim'
 
 Plug 'rust-lang/rust.vim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'MunifTanjim/prettier.nvim'
 
 -- LSP
 Plug 'neovim/nvim-lspconfig'
