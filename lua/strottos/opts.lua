@@ -41,3 +41,15 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
+
+-- FileType specifics
+
+for _, ft in ipairs({"html", "css", "js"}) do
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = ft,
+        callback = function()
+            vim.opt_local.shiftwidth = 2
+            vim.opt_local.tabstop = 2
+        end
+    })
+end
