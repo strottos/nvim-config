@@ -44,7 +44,7 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 
 -- FileType specifics
 
-for _, ft in ipairs({"html", "css", "js"}) do
+for _, ft in ipairs({"html", "css", "javascript", "typescript", "typescriptreact"}) do
     vim.api.nvim_create_autocmd("FileType", {
         pattern = ft,
         callback = function()
