@@ -53,3 +53,11 @@ for _, ft in ipairs({"html", "css", "javascript", "typescript", "typescriptreact
         end
     })
 end
+
+vim.api.nvim_create_autocmd({"BufNewFile","BufRead"}, {
+    pattern = "*.mdx",
+    callback = function()
+        vim.o.filetype = 'markdown'
+        vim.o.fo = 'want'
+    end
+})
