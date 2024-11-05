@@ -116,7 +116,7 @@ local servers = {
   "gopls",
   "omnisharp",
   "pyright",
-  "tsserver",
+  "ts_ls",
 
   "terraformls",
 
