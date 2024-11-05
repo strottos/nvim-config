@@ -10,6 +10,7 @@ Plug('MunifTanjim/nui.nvim')
 Plug('nvim-telescope/telescope.nvim', { branch = '0.1.x' })
 
 Plug 'rebelot/kanagawa.nvim'
+Plug('catppuccin/nvim', { as = 'catppuccin' })
 
 Plug('nvim-treesitter/nvim-treesitter', { run = function()
   vim.cmd('TSUpdate')
