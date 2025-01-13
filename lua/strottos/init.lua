@@ -1,4 +1,3 @@
-require('strottos/opts')
-require('strottos/bindings')
-require('strottos/vimplug')
-require('strottos/plug')
+require("strottos.opts")
+require("strottos.lazy")
+require("strottos.bindings")

@@ -24,6 +24,7 @@ vim.o.shiftwidth = vim.o.tabstop
 vim.o.expandtab = true
 
 vim.wo.number = true
+vim.wo.cursorline = true
 vim.wo.relativenumber = false
 
 vim.wo.signcolumn = 'yes'
@@ -32,6 +33,7 @@ vim.wo.wrap = true
 
 vim.g.mapleader = ','
 vim.g.maplocalleader = '-'
+vim.o.clipboard = "unnamedplus"  -- Use system clipboard
 
 vim.o.list=true
 vim.o.lcs='tab:> ,trail:%'
