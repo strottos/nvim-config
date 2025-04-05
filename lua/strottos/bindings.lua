@@ -16,6 +16,13 @@ vim.api.nvim_set_keymap('v', '-', '<esc>`>a-<esc>`<i-<esc>', {noremap = true})
 vim.api.nvim_set_keymap('v', '<leader>*', '<esc>`>a*<esc>`<i*<esc>', {noremap = true})
 vim.api.nvim_set_keymap('v', '<leader><', '<esc>`>a><esc>`<i<<esc>', {noremap = true})
 
+-- Add things specific to languages.
+--
+-- Need to find a way to have these on filetype dependent. Probably an event we can utilise somehow but
+-- at this stage when there's so few let's kick the can on that.
+vim.api.nvim_set_keymap('v', '<leader>s', '<esc>`>a)<esc>`<iSome(<esc>', {noremap = true})
+vim.api.nvim_set_keymap('v', '<leader>o', '<esc>`>a)<esc>`<iOk(<esc>', {noremap = true})
+
 -- Tab shortcuts
 vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<S-tab>', ':tabprevious<CR>', {noremap = true})
