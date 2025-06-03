@@ -88,9 +88,12 @@ return {
             debug = true,
             provider = "ollama",
             cursor_applying_provider = 'groq',
-            ollama = {
-                model = "deepseek-coder-v2:latest",
-            },
+            providers = {
+                ollama = {
+                    endpoint = "http://192.168.1.169:11434",
+                    model = "phi4:latest",
+                },
+            }
         },
         build = "make BUILD_FROM_SOURCE=true",
         dependencies = {
