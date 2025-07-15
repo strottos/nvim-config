@@ -32,6 +32,7 @@ vim.api.nvim_set_keymap('n', '<localleader>>', ':exec "tabm " . (tabpagenr() + 1
 
 -- Insert mode shortcuts
 vim.api.nvim_set_keymap('i', '<c-u>', '<esc>viwUea', {noremap = true})
+vim.api.nvim_set_keymap('i', '<c-l>', '<esc>viwuea', {noremap = true})
 
 -- Command mode shortcuts
 vim.api.nvim_set_keymap('c', '<C-Left>', '<S-Left>', {noremap = true})

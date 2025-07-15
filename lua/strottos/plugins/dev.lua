@@ -40,6 +40,7 @@ return {
                     rust = { "rustfmt", lsp_format = "fallback" },
                     go = { "gofmt" },
                     javascript = { "prettier" },
+                    proto = { "buf" },
                 },
                 format_on_save = {
                     lsp_fallback = true,

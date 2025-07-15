@@ -1,6 +1,6 @@
 {
   "aerial.nvim": { "branch": "master", "commit": "5c0df1679bf7c814c924dc6646cc5291daca8363" },
-  "avante.nvim": { "branch": "main", "commit": "0c6a8f5688cefb37259d3404f0403075e033a182" },
+  "avante.nvim": { "branch": "main", "commit": "154e5f578f8925135a9dd23764d4c33a10c7ae36" },
   "baleia.nvim": { "branch": "main", "commit": "880e97c02edf3148ba2bdc6305ac03eb3c3711e0" },
   "blink-cmp-avante": { "branch": "master", "commit": "5cf0854b065073083de72d9a988cff1c4b419148" },
   "blink.cmp": { "branch": "main", "commit": "02ee0a164117aa3caf7af80cde3b917ad5effcde" },
@@ -19,7 +19,7 @@
   "nvim-vadre": { "branch": "main", "commit": "d9cdeceb1490b5be2606e6470c27fad2558a3592" },
   "nvim-web-devicons": { "branch": "master", "commit": "0422a19d9aa3aad2c7e5cca167e5407b13407a9d" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
-  "render-markdown.nvim": { "branch": "main", "commit": "b8c3d474d4da14fa1a5f9a0a18955c6e7db88f65" },
+  "render-markdown.nvim": { "branch": "main", "commit": "12d951dfe3c884063e874bdfc0b4c86e0843237c" },
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
   "undotree": { "branch": "master", "commit": "28f2f54a34baff90ea6f4a735ef1813ad875c743" },
   "vim-dirdiff": { "branch": "master", "commit": "84bc8999fde4b3c2d8b228b560278ab30c7ea4c9" }
