@@ -103,7 +103,7 @@ return {
                 settings = {
                     ["rust-analyzer"] = {
                         assist = {
-                            importMergeBehavior = "last",
+                            importMergeBehavior = "preserve",
                             importPrefix = "by_self",
                         },
                         cargo = {
@@ -117,9 +117,7 @@ return {
                                 enable = false,
                             },
                         },
-                        checkOnSave = {
-                            command = "clippy"
-                        },
+                        checkOnSave = true,
                     },
                 },
                 capabilities = capabilities,

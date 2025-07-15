@@ -95,7 +95,7 @@ return {
                 },
             }
         },
-        build = "make BUILD_FROM_SOURCE=true",
+        build = "pwsh ./Build.ps1 luajit true",
         dependencies = {
             "nvim-treesitter/nvim-treesitter",
             "stevearc/dressing.nvim",
